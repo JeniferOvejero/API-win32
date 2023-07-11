@@ -1,5 +1,4 @@
-
-// Descrição:   Esqueleto básico de criação de uma janela no Windows
+// Descrição:   Esqueleto básico de criação de uma janela no Windows 
 //              usando a API Win32. Este esqueleto pode ser usado como ponto
 //              de partida para criação de qualquer aplicação.
 //
@@ -41,16 +40,16 @@ int APIENTRY WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
 
     // Criando uma janela baseada na classe "BasicWindow" 
     hwnd = CreateWindow("BasicWindow",                // classe da janela
-                        "Aplicação",                  // título da janela
-                        WS_OVERLAPPEDWINDOW,          // estilo da janela
-                        CW_USEDEFAULT,                // posição x inicial
-                        CW_USEDEFAULT,                // posição y inicial
-                        CW_USEDEFAULT,                // largura inicial
-                        CW_USEDEFAULT,                // altura inicial
-                        NULL,                         // identificador da janela pai
-                        NULL,                         // identificador do menu
-                        hInstance,                    // identificador da aplicação
-                        NULL);                        // parâmetros de criação
+        "Aplicação",                  // título da janela
+        WS_OVERLAPPEDWINDOW,          // estilo da janela
+        CW_USEDEFAULT,                // posição x inicial
+        CW_USEDEFAULT,                // posição y inicial
+        CW_USEDEFAULT,                // largura inicial
+        CW_USEDEFAULT,                // altura inicial
+        NULL,                         // identificador da janela pai
+        NULL,                         // identificador do menu
+        hInstance,                    // identificador da aplicação
+        NULL);                        // parâmetros de criação
 
     // Mostra e atualiza a janela
     ShowWindow(hwnd, nCmdShow);
@@ -93,5 +92,3 @@ LRESULT CALLBACK WinProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
     }
     return DefWindowProc(hwnd, message, wParam, lParam);
 }
-
-//-------------------------------------------------------------------------------
